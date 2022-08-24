@@ -49,4 +49,4 @@ function getUserPhoto() {
     let userEmail = getUserEmail();
     let photo = AdminDirectory.Users.Photos.get(userEmail).photoData;
     return Utilities.base64EncodeWebSafe(photo).replace(/_/g, '/').replace(/-/g, '+');
-}// club sheet value for sheet status
+}
