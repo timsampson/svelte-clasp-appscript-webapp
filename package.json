@@ -1,0 +1,45 @@
+{
+  "name": "merit-viewer-22-23",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "deploy": "run-s bundle clasp:push rm-artifacts",
+    "bundle": "run-s rm-artifacts build generate stage",
+    "rm-artifacts": "rm -fr ./deploy/*",
+    "generate": "run-p generate:*",
+    "generate:remote": "cp -r ./server/* ./deploy/",
+    "generate:css": "echo '<style>' > ./staging/bundlecss.ejs && cat ./public/build/bundle.css >> ./staging/bundlecss.ejs && echo '</style>' >> ./staging/bundlecss.ejs ",
+    "generate:js": "echo '<script>' > ./staging/bundlejs.ejs && cat ./public/build/bundle.js >> ./staging/bundlejs.ejs && echo '</script>' >> ./staging/bundlejs.ejs",
+    "stage": "cd ./staging && ejs-cli index.ejs --out ../deploy/",
+    "clasp:push": "clasp push"
+  },
+  "devDependencies": {
+    "@google/clasp": "2.4.1",
+    "@rollup/plugin-commonjs": "21.0.3",
+    "@rollup/plugin-node-resolve": "13.2.0",
+    "@tailwindcss/typography": "0.5.2",
+    "@types/google-apps-script": "1.0.46",
+    "ejs-cli": "2.2.3",
+    "ejs": "3.1.7",
+    "npm-run-all": "4.1.5",
+    "rollup": "2.70.1",
+    "rollup-plugin-css-only": "3.1.0",
+    "rollup-plugin-livereload": "2.0.5",
+    "rollup-plugin-svelte": "7.1.0",
+    "rollup-plugin-terser": "7.0.2",
+    "sirv-cli": "2.0.2",
+    "svelte": "3.49.0",
+    "svelte-preprocess": "4.10.6"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.4",
+    "daisyui": "2.20.0",
+    "postcss": "8.4.12",
+    "rollup-plugin-postcss": "4.0.2",
+    "svelte-spa-router": "3.2.0",
+    "tailwindcss": "3.0.24"
+  }
+}

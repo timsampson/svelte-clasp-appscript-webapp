@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('header'); %> <%- include('bundlecss'); %><%- include('globalcss'); %>
+  </head>
+
+  <body>
+    <!-- bundlejs included in the body to ensure it loads last, which we'll need if you have any external libraries -->
+    <%- include('bundlejs'); %>
+  </body>
+</html>
