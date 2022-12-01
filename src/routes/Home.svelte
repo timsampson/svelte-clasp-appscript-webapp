@@ -22,41 +22,49 @@
   <li class="ml-2">
     <a
       class="text-blue-500 no-underline hover:underline hover:text-blue-700"
-      href="https://daisyui.com/">Daisy UI</a
+      href="https://daisyui.com/"
+      target="_blank"
+      rel="noopener noreferrer">Daisy UI</a
     >
   </li>
   <li class="ml-2">
     <a
       class="text-blue-500 no-underline hover:underline hover:text-blue-700"
       href="https://developers.google.com/apps-script/guides/web/"
-      >Google Apps Script Web App</a
+      target="_blank"
+      rel="noopener noreferrer">Google Apps Script Web App</a
     >
   </li>
   <li class="ml-2">
     <a
       class="text-blue-500 no-underline hover:underline hover:text-blue-700"
-      href="https://tailwindcss.com/">TailwindCSS</a
+      href="https://tailwindcss.com/"
+      target="_blank"
+      rel="noopener noreferrer">TailwindCSS</a
     >
   </li>
   <li class="ml-2">
     <a
       class="text-blue-500 no-underline hover:underline hover:text-blue-700"
       href="https://github.com/ItalyPaleAle/svelte-spa-router#readme/"
-      >Svelte Spa Router</a
+      target="_blank"
+      rel="noopener noreferrer">Svelte Spa Router</a
     >
   </li>
   <li class="ml-2">
     <a
       class="text-blue-500 no-underline hover:underline hover:text-blue-700"
-      href="https://svelte.dev/">Svelte</a
+      href="https://svelte.dev/"
+      target="_blank"
+      rel="noopener noreferrer">Svelte</a
     >
   </li>
 </ul>
 <h2 class="my-2 ml-2 text-xl">Reactivity</h2>
 <button
   class="btn btn-wide"
-  class:btn-info={count <= 10}
-  class:btn-secondary={count > 10 && count <= 16}
+  class:btn-info={count <= 9}
+  class:btn-secondary={count > 9 && count <= 16}
   class:btn-warning={count > 16 && count <= 20}
   class:btn-error={count > 20}
   on:click={handleClick}
