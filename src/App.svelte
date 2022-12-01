@@ -3,7 +3,9 @@
   import { push } from "svelte-spa-router";
   import NotFound from "./routes/NotFound.svelte";
   import Navigation from "./components/Shared/Navigation.svelte";
-  import Merits from "./routes/Merits.svelte";
+  import About from "./routes/About.svelte";
+  import Home from "./routes/Home.svelte";
+
   google.script.url.getLocation(function (location) {
     if (location.hash.length > 0) {
       push(location.hash);
@@ -12,15 +14,16 @@
     }
   });
   const routes = {
-    "/": Merits,
-    "/merits": Merits,
+    "/": Home,
+    "/home": Home,
+    "/about": About,
     "*": NotFound,
   };
 </script>
 
 <body>
   <Navigation />
-  <main class="m-2">
+  <main class="m-4">
     <Router {routes} />
   </main>
 </body>

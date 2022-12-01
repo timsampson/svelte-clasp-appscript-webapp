@@ -3,3 +3,4 @@
 .DS_Store
 staging/bundlecss.ejs
 staging/bundlejs.ejs
+.clasp.json
