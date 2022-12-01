@@ -6,7 +6,7 @@
   }
 </script>
 
-<h1 class="mb-2 text-3xl font-bold underlin">Home page</h1>
+<h1 class="mb-2 text-3xl font-bold underline font-serif">Home page</h1>
 <h2 class="my-2 ml-2 text-xl">Appscript Web App Template</h2>
 
 <p class="ml-2 ">
@@ -60,9 +60,9 @@
     >
   </li>
 </ul>
-<h2 class="my-2 ml-2 text-xl">Reactivity</h2>
+<h2 class="my-2 ml-2 text-xl">Reactivity and the Class Directive</h2>
 <button
-  class="btn btn-wide"
+  class="ml-8 btn btn-wide"
   class:btn-info={count <= 9}
   class:btn-secondary={count > 9 && count <= 16}
   class:btn-warning={count > 16 && count <= 20}
