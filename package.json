@@ -1,7 +1,7 @@
 {
-  "name": "merit-viewer-22-23",
+  "name": "svelte-clasp-appscript-webapp",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
