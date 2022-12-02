@@ -6,7 +6,7 @@
   }
 </script>
 
-<h1 class="mb-2 text-3xl font-bold underline font-serif">Home page</h1>
+<h1 class="mb-2 text-3xl font-bold underline font-serif">Welcome</h1>
 <h2 class="my-2 ml-2 text-xl">Appscript Web App Template</h2>
 
 <p class="ml-2 ">
